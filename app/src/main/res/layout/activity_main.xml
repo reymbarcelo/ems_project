@@ -10,10 +10,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rey.emsapp.MainActivity">
 
+    <Button
+        android:text="Feet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="171dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Where does it hurt?"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
