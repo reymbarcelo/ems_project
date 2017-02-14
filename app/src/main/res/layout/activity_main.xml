@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textSize="20sp"
         android:text="Symptoms check up"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -25,10 +26,13 @@
     <Spinner
         android:id="@+id/symptomList"
         android:layout_width="wrap_content"
+        android:entries="@array/symptomArray"
         android:layout_gravity="center"
         android:layout_height="wrap_content"></Spinner>
+
     <Button
-        android:text="EMT"
+        android:text="Check"
+        android:onClick="check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
