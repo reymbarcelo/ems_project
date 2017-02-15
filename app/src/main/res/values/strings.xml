@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">EMS App</string>
+
+
+    <string-array name="symptomArray">
+        <item>Back pain</item>
+        <item>Cold</item>
+        <item>Cough</item>
+    </string-array>
 </resources>
+
