@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         Spinner spinner = (Spinner) findViewById(R.id.symptomList);
         Intent intent = new Intent(this, SolutionActivity.class);
         intent.putExtra("symptom", String.valueOf(spinner.getSelectedItem()));
-        Toast.makeText(this, String.valueOf(spinner.getSelectedItem()),Toast.LENGTH_LONG).show();
         startActivity(intent);
     }
 }
