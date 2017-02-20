@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +20,14 @@ public class MainActivity extends AppCompatActivity {
         Spinner spinner = (Spinner) findViewById(R.id.symptomList);
         Intent intent = new Intent(this, SolutionActivity.class);
         intent.putExtra("symptom", String.valueOf(spinner.getSelectedItem()));
-        Toast.makeText(this, String.valueOf(spinner.getSelectedItem()),Toast.LENGTH_LONG).show();
         startActivity(intent);
+    }
+
+    public void checkSymptom(View view) {
+        TextView tv = (TextView)findViewById(R.id.button);
+        String str = tv.getText().toString();
+        if (str.equals("yay!")){
+            tv.setText("woo!");
+        } else tv.setText("yay!");
     }
 }
